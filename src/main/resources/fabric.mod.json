@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wynnextras",
+	"version": "${version}",
+	"name": "WynnExtras",
+	"description": "Special thanks to Mikecraft1224 for helping me!",
+	"authors": [
+		"JulianH06"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/JulianH06/wynnarsch-1.21.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wynnextras/wynnextras.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+          "julianh06.wynnextras.core.WynnExtras"
+		],
+		"modmenu": [
+			"julianh06.wynnextras.config.WynnExtrasModMenuApiImpl"
+        ]
+	},
+	"mixins": [
+      "wynnextras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"wynntils": ">=3.2.4",
+		"modmenu": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

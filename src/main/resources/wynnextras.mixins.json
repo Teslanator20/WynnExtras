@@ -1,0 +1,37 @@
+{
+  "required": true,
+  "package": "julianh06.wynnextras.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "InventoryScreenMixin",
+    "LivingEntityRendererMixin",
+    "StringListCellMixin",
+    "Accessor.HandledScreenAccessor",
+    "Accessor.KeybindingAccessor",
+    "BankOverlay.DrawContextMixin",
+    "BankOverlay.HandledScreenMixin",
+    "Invoker.HandledScreenInvoker"
+  ],
+  "mixins": [
+    "ChatPacketRecievedEventMixin",
+    "MessageFilterFeatureMixin",
+    "Accessor.PersonalStorageUtilitiesFeatureAccessor",
+    "Accessor.SlotAccessor",
+    "BankOverlay.ContainerScrollFeatureMixin",
+    "BankOverlay.PersonalStorageUtilitiesFeatureMixin",
+    "Invoker.ItemHighlightFeatureInvoker",
+    "Raid.RaidEndedEventMixin",
+    "Raid.RaidStartEventMixin",
+    "ShamanTotem.ShamanTotemCircleActivate",
+    "ShamanTotem.ShamanTotemCircleRemoved",
+    "ShamanTotem.ShamanTotemCircleSummoned",
+    "ShamanTotem.ShamanTotemCircleUpdated",
+    "ShamanTotem.ShamanTotemModelMixin"
+  ]
+}
